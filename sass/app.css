@@ -40,7 +40,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 129px;
+  top: 109px;
   width: 388px;
 }
 
@@ -91,10 +91,10 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .-pop-up-bg .-pop-up {
     top: 50px;
-    max-width: calc(100% - 38px) !important;
+    max-width: calc(100% - 28px) !important;
   }
   .-pop-up-bg .-pop-up .-main {
     height: -webkit-fit-content !important;
@@ -299,7 +299,7 @@
   display: block;
   position: absolute;
   left: 6px;
-  bottom: 6px;
+  top: 1px;
   background-image: url(../img/checked.png);
   width: 11px;
   height: 11px;
@@ -361,6 +361,14 @@
   background: #d91717;
   border-radius: 0px;
   border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 420px) {
+  .-pop-up-bg .-pop-up .-main {
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
 }
 
 /* --- End Pop Up # 3 */
@@ -434,7 +442,7 @@
 }
 
 .-pop-up-4 .-main form .-check-points {
-  padding: 0px 0px 46px 19px;
+  padding: 0px 19px 46px 19px;
 }
 
 .-pop-up-4 .-main form .-check-points p {
@@ -714,6 +722,12 @@
   color: black !important;
 }
 
+@media only screen and (max-width: 420px) {
+  .-pop-up.-pop-up-5 .-main {
+    border-radius: 0px;
+  }
+}
+
 /* --- End Pop Up # 5 */
 /* Pop Up # 6 Start --- */
 .-pop-up-6 .-main {
@@ -786,6 +800,13 @@
 .-pop-up-6 .-footer p {
   text-align: right;
   color: black !important;
+}
+
+@media only screen and (max-width: 420px) {
+  .-pop-up.-pop-up-6 .-main {
+    height: 463px !important;
+    border-radius: 0px;
+  }
 }
 
 /* --- End Pop Up # 6 */
@@ -1017,9 +1038,10 @@
   margin: 0px 8px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .-pop-up.-pop-up-9 .-main {
     height: 463px !important;
+    border-radius: 0px;
   }
 }
 
@@ -1048,9 +1070,10 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .-pop-up.-pop-up-10 .-main {
     height: 463px !important;
+    border-radius: 0px;
   }
 }
 
