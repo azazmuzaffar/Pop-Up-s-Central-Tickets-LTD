@@ -108,10 +108,10 @@
     padding: 19px;
     h2 {
       margin: 0;
-      font: normal normal bold 24px/23px Arial;
+      font: normal normal bold 25px/29px Arial;
       letter-spacing: 0;
       color: #d91717;
-      margin-bottom: 15px;
+      margin-bottom: 13px;
     }
     .available-timeline {
       margin-top: 15px;
@@ -122,14 +122,14 @@
         li {
           display: inline-block;
           cursor: pointer;
-          width: 70px;
+          width: 65px;
           margin-right: 3px;
           padding: 3px 0px;
           background: #d9534f;
           border-radius: 20px;
           text-align: center;
           color: white;
-          font: normal normal normal 14px/23px Arial;
+          font: normal normal normal 15px/17px Arial;
           letter-spacing: 0;
           &:last-of-type {
             margin-right: 0px;
@@ -201,6 +201,15 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 620px) {
+  .-pop-up-bg {
+    .-pop-up {
+      .-main {
+        height: 440px !important;
       }
     }
   }
