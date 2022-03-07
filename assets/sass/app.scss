@@ -3,6 +3,7 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<< */
 
 /* Pop Up's */
+.pu-1,
 .pu-3,
 .pu-4,
 .pu-5,
@@ -87,10 +88,124 @@
       max-width: calc(100% - 28px) !important;
       .-main {
         height: fit-content !important;
+        #datepicker {
+          background: red;
+        }
       }
     }
   }
 }
+
+/* Pop Up # 1 Start --- */
+.-pop-up-1 {
+  margin-top: 70px;
+  opacity: 0;
+  .-main {
+    position: relative;
+    height: 475px !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 19px;
+    h2 {
+      margin: 0;
+      font: normal normal bold 24px/23px Arial;
+      letter-spacing: 0;
+      color: #d91717;
+      margin-bottom: 15px;
+    }
+    .available-timeline {
+      margin-top: 15px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline-block;
+          cursor: pointer;
+          width: 70px;
+          margin-right: 3px;
+          padding: 3px 0px;
+          background: #d9534f;
+          border-radius: 20px;
+          text-align: center;
+          color: white;
+          font: normal normal normal 14px/23px Arial;
+          letter-spacing: 0;
+          &:last-of-type {
+            margin-right: 0px;
+          }
+          &.limited-time {
+            background: #d9534f;
+          }
+          &.high-time {
+            background: #5cb85c;
+          }
+        }
+      }
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    .-availability {
+      position: absolute;
+      bottom: 14px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+          display: inline-block;
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+          border-radius: 20px;
+          text-align: center;
+          font: normal normal normal 15px/23px Arial;
+          font-weight: 500;
+          letter-spacing: 0;
+          &:last-of-type {
+            margin-right: 0px;
+          }
+          &::before {
+            content: "";
+            display: inline;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 4px;
+            background: green;
+            display: flex;
+            align-items: center;
+          }
+          &.high {
+            &::before {
+              background: #5cb85c;
+            }
+          }
+          &.low {
+            &::before {
+              background: #f0ad4e;
+            }
+          }
+          &.limited {
+            &::before {
+              background: #d9534f;
+            }
+          }
+          &:first-of-type {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --- End Pop Up # 1 */
 
 /* Pop Up # 3 Start --- */
 .-pop-up-3 {
@@ -206,7 +321,7 @@
           }
         }
         .-check-it {
-          margin: 17px 0px 80px 0px;
+          margin: 17px 0px 78px 0px;
         }
         p {
           span::after {
@@ -264,10 +379,10 @@
   }
   .-total {
     padding: 15px 19px;
-    border-top: 0.5px solid #000;
     border-bottom: 0.5px solid #000;
     background: white;
     text-align: right;
+    border-top: 1px solid #000;
     p {
       font: normal normal normal 18px/21px Arial;
       color: black;
@@ -294,6 +409,12 @@
     a {
       text-decoration: none;
       color: black;
+      &.continue {
+        color: white;
+        background: #d91717;
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+      }
     }
     input {
       border: none;
@@ -372,7 +493,7 @@
     form {
       margin: 17px 0px 0px;
       .-check-points {
-        padding: 0px 19px 46px 19px;
+        padding: 0px 19px 43px 19px;
         p {
           font: normal normal normal 15px/17px Arial;
           letter-spacing: 0px;
@@ -456,6 +577,12 @@
     a {
       text-decoration: none;
       color: black;
+      &.continue {
+        color: white;
+        background: #d91717;
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+      }
     }
     input {
       border: none;
@@ -473,7 +600,7 @@
 /* Pop Up # 5 Start --- */
 .-pop-up-5 {
   .-main {
-    height: 425px !important;
+    height: 423px !important;
     padding: 19px;
     h4 {
       font: normal normal bold 20px/23px Arial;
@@ -603,6 +730,7 @@
 .-pop-up-6 {
   .-main {
     position: relative;
+    height: 461px !important;
     h4 {
       font: normal normal normal 20px/21px Arial;
       padding: 19px;
@@ -679,7 +807,7 @@
       }
       .-previous-card {
         width: fit-content;
-        position: relative;
+        position: relative !important;
         a {
           border: 0.5px solid #000000;
           border-radius: 10px;
@@ -691,11 +819,52 @@
           color: black;
           text-decoration: none;
         }
-        svg {
-          position: absolute;
-          right: 17px;
-          top: 50%;
-          transform: translateY(-50%);
+        .checkBoxx {
+          padding: 0;
+          top: 11px;
+          position: absolute !important;
+          right: 3px;
+          margin: 0;
+          input {
+            margin-right: 8px;
+            cursor: pointer;
+            opacity: 0;
+          }
+          position: relative;
+          span {
+            a {
+              color: #ff0000;
+              text-decoration: underline;
+            }
+          }
+          span::before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 5px;
+            top: 3px;
+            left: 0;
+            width: 11px;
+            height: 11px;
+            margin-left: 4px;
+            border: 0.5px solid #000;
+            pointer-events: none;
+          }
+          span::after {
+            pointer-events: none;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 6px;
+            top: 1px;
+            background-image: url(../img/checked.png);
+            width: 11px;
+            height: 11px;
+            display: none;
+          }
+          input:checked + span::after {
+            display: block;
+          }
         }
       }
     }
@@ -743,12 +912,52 @@
             width: 69px;
           }
         }
-        P {
-          margin: 0 0 20px 0px;
+        p {
+          padding: 0;
           font: normal normal normal 15px/17px Arial;
           letter-spacing: 0px;
-          input[type="checkbox"] {
+          display: flex;
+          margin: 0 0 17.5px 0px;
+          input {
+            margin-right: 8px;
+            cursor: pointer;
             width: fit-content;
+            opacity: 0;
+          }
+          position: relative;
+          span {
+            a {
+              color: #ff0000;
+              text-decoration: underline;
+            }
+          }
+          span::before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 5px;
+            top: 3px;
+            left: 0;
+            width: 11px;
+            height: 11px;
+            margin-left: 4px;
+            border: 0.5px solid #000;
+            pointer-events: none;
+          }
+          span::after {
+            pointer-events: none;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 6px;
+            top: 1px;
+            background-image: url(../img/checked.png);
+            width: 11px;
+            height: 11px;
+            display: none;
+          }
+          input:checked + span::after {
+            display: block;
           }
         }
       }
@@ -782,6 +991,12 @@
         a {
           text-decoration: none;
           color: black;
+          &.continue {
+            color: white;
+            background: #d91717;
+            border-radius: 0px;
+            border-bottom-right-radius: 10px;
+          }
         }
         input {
           border: none;
@@ -802,6 +1017,7 @@
 .-pop-up-9 {
   .-main {
     text-align: center;
+    height: 462px !important;
     .-content {
       position: absolute;
       width: 100%;
@@ -850,6 +1066,7 @@
 .-pop-up-10 {
   .-main {
     text-align: center;
+    height: 462px !important;
     .-content {
       position: absolute;
       width: 100%;

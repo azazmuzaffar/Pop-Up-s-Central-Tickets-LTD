@@ -14,11 +14,13 @@
     <!-- >>>  Meta Keywords  <<<<-->
     <meta name="keywords" content="Central Tickets LTD" />
 
-    <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <!-- >>> Datepicker <<< -->
+    <link rel="stylesheet" href="./assets/datepicker/css/bootstrap-datepicker.min.css" />
 
+    <!-- >>> Custom / Datepicker <<< -->
+    <link rel="stylesheet" href="./assets/sass/datepicker.css" />
     <!-- >>> Custom CSS <<< -->
-    <link rel="stylesheet" href="./sass/app.css" />
+    <link rel="stylesheet" href="./assets/sass/app.css" />
   </head>
   <body>
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<< -->
@@ -29,25 +31,50 @@
     <!-- >>>>>>>>>>>>>>>>>>> Pop Up's <<<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
 
-    <div class="-show-pop-up">
-      <h1>Pop Up's</h1>
-      <ul>
-        <li>Pop Up # 1</li>
-        <li>Pop Up # 2</li>
-        <li class="show-popup-3">Pop Up # 3</li>
-        <li class="show-popup-4">Pop Up # 4</li>
-        <li class="show-popup-5">Pop Up # 5</li>
-        <li class="show-popup-6">Pop Up # 6</li>
-        <li class="show-popup-7">Pop Up # 7</li>
-        <li class="show-popup-8">Pop Up # 8</li>
-        <li class="show-popup-9">Pop Up # 9</li>
-        <li class="show-popup-10">Pop Up # 10</li>
-      </ul>
+    <div class="-show-pop-up" style="cursor: pointer">
+      <h1 class="show-popup-1">Click me</h1>
     </div>
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>>>>>> Body <<<<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>> Pop Up # 1 <<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
+    <div class="-pop-up-bg pu-1">
+      <div class="-pop-up -pop-up-1">
+        <div class="-header">
+          <p>Book Tickets – Select date</p>
+          <a href="#" class="close-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14.707" height="14.707" viewBox="0 0 14.707 14.707">
+              <g id="Group_1" data-name="Group 1" transform="translate(0.362 -0.029)">
+                <line id="Line_1" data-name="Line 1" x2="14" y2="14" transform="translate(-0.009 0.382)" fill="none" stroke="#fff" stroke-width="1" />
+                <line id="Line_2" data-name="Line 2" x1="14" y2="14" transform="translate(-0.009 0.382)" fill="none" stroke="#fff" stroke-width="1" />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="-main">
+          <h2>Celtic Social Club</h2>
+          <div class="datepicker"></div>
+          <div class="available-timeline">
+            <ul>
+              <li class="limited-time">3:30pm</li>
+              <li class="high-time">8pm</li>
+            </ul>
+          </div>
+          <div class="-availability">
+            <ul>
+              <li>Availability:</li>
+              <li class="high">High</li>
+              <li class="low">Low</li>
+              <li class="limited">Very Limited</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>> Pop Up # 3 <<<<<<<<<<<<<<<<<< -->
@@ -135,7 +162,8 @@
               </div>
               <div class="-pay-or-back">
                 <a href="#">Back</a>
-                <input type="submit" value="Continue" />
+                <input style="display: none" type="submit" value="Continue" />
+                <a href="#" class="continue">Continue</a>
               </div>
             </form>
           </div>
@@ -200,7 +228,8 @@
               </div>
               <div class="-pay-or-back">
                 <a href="#">Back</a>
-                <input type="submit" value="Continue" />
+                <input style="display: none" type="submit" value="Continue" />
+                <a href="#" class="continue">Continue</a>
               </div>
             </form>
           </div>
@@ -292,8 +321,8 @@
             </div>
             <div class="-other-payments">
               <h2>Other payment methods</h2>
-              <a href="#">Debit or Credit Card</a>
-              <a href="#">Apple &nbsp;<img src="./img/apple-logo-transparent_white.png" alt="" />Pay</a>
+              <a href="#" class="continue">Debit or Credit Card</a>
+              <a href="#" class="continue">Apple &nbsp;<img src="./assets/img/apple-logo-transparent_white.png" alt="" />Pay</a>
             </div>
           </div>
         </div>
@@ -325,10 +354,10 @@
             <span>Please select your payment:</span>
           </h4>
           <div class="-content">
-            <a href="#">Debit or Credit Card</a>
-            <a href="#">Apple &nbsp;<img src="./img/apple-logo-transparent_white.png" alt="" />Pay</a>
+            <a href="#" class="continue">Debit or Credit Card</a>
+            <a href="#" class="continue">Apple &nbsp;<img src="./assets/img/apple-logo-transparent_white.png" alt="" />Pay</a>
             <p>Or</p>
-            <a href="#"
+            <a href="#" class="continue"
               >Top up your wallet &nbsp;
               <svg xmlns="http://www.w3.org/2000/svg" width="22.728" height="14.972" viewBox="0 0 22.728 14.972">
                 <g id="Group_161" data-name="Group 161" transform="translate(-1004.5 -487.515)">
@@ -409,30 +438,17 @@
             <h3>Use your saved card</h3>
             <div class="-previous-card">
               <a href="#">* * * * &nbsp; * * * * &nbsp; * * * * &nbsp; 3457</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14.425" height="15.331" viewBox="0 0 14.425 15.331">
-                <g id="Group_168" data-name="Group 168" transform="translate(-1028 -246.736)">
-                  <g id="Rectangle_40" data-name="Rectangle 40" transform="translate(1028 248.067)" fill="none" stroke="#000" stroke-width="1">
-                    <rect width="14" height="14" rx="5" stroke="none" />
-                    <rect x="0.5" y="0.5" width="13" height="13" rx="4.5" fill="none" />
-                  </g>
-                  <path
-                    id="Path_4"
-                    data-name="Path 4"
-                    d="M48,540.32l4.123,4.123,6.732-10.827"
-                    transform="translate(983.147 -286.616)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-width="1"
-                  />
-                </g>
-              </svg>
+              <div class="checkBoxx">
+                <input type="checkbox" checked />
+                <span></span>
+              </div>
             </div>
           </div>
           <form action="">
             <div class="-input-area">
               <div class="-head">
                 <h3>New Card</h3>
-                <img src="./img/payment-methods.png" alt="" />
+                <img src="./assets/img/payment-methods.png" alt="" />
               </div>
               <input type="text" placeholder="Name on Card" />
               <input type="text" placeholder="Card Number" />
@@ -442,7 +458,7 @@
               </div>
               <p>
                 <input type="checkbox" />
-                Save card for future purchases
+                <span>Save card for future purchases</span>
               </p>
             </div>
             <div class="-total">
@@ -450,7 +466,8 @@
             </div>
             <div class="-pay-or-back">
               <a href="#">Back</a>
-              <input type="submit" value="Pay" />
+              <input style="display: none" type="submit" value="Pay" />
+              <a href="#" class="continue">Pay</a>
             </div>
           </form>
         </div>
@@ -568,7 +585,7 @@
             <p>13/03/22 – 7pm</p>
           </div>
         </div>
-        <div class="-footer">
+        <div class="-footer continue" style="cursor: pointer">
           <p>Important Collections Instructions</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="19.535" height="19.535" viewBox="0 0 19.535 19.535">
             <g id="Group_165" data-name="Group 165" transform="translate(7683.061 13557.799)">
@@ -646,7 +663,7 @@
             </p>
           </div>
         </div>
-        <div class="-footer">
+        <div class="-footer continue" style="cursor: pointer">
           <p>Restart Booking</p>
         </div>
       </div>
@@ -707,12 +724,12 @@
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<< -->
 
     <!-- >>> JQUERY <<< -->
-    <script src="./jquery/jquery.min.js" defer></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
 
-    <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
-    <script src="./bootstrap/js/bootstrap.min.js" defer></script>
+    <!-- >>> DATEPICKER <<< -->
+    <script src="./assets/datepicker/js/bootstrap-datepicker.min.js"></script>
 
     <!-- >>> CUSTOM JS <<< -->
-    <script src="./js/app.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
   </body>
 </html>

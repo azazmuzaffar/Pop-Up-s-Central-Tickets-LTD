@@ -2,6 +2,7 @@
 /* >>>>>>>>>>>>> Central Tickets LTD <<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<< */
 /* Pop Up's */
+.pu-1,
 .pu-3,
 .pu-4,
 .pu-5,
@@ -101,8 +102,144 @@
     height: -moz-fit-content !important;
     height: fit-content !important;
   }
+  .-pop-up-bg .-pop-up .-main #datepicker {
+    background: red;
+  }
 }
 
+/* Pop Up # 1 Start --- */
+.-pop-up-1 {
+  margin-top: 70px;
+  opacity: 0;
+}
+
+.-pop-up-1 .-main {
+  position: relative;
+  height: 475px !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 19px;
+}
+
+.-pop-up-1 .-main h2 {
+  margin: 0;
+  font: normal normal bold 24px/23px Arial;
+  letter-spacing: 0;
+  color: #d91717;
+  margin-bottom: 15px;
+}
+
+.-pop-up-1 .-main .available-timeline {
+  margin-top: 15px;
+  display: none;
+}
+
+.-pop-up-1 .-main .available-timeline ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.-pop-up-1 .-main .available-timeline ul li {
+  display: inline-block;
+  cursor: pointer;
+  width: 70px;
+  margin-right: 3px;
+  padding: 3px 0px;
+  background: #d9534f;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font: normal normal normal 14px/23px Arial;
+  letter-spacing: 0;
+}
+
+.-pop-up-1 .-main .available-timeline ul li:last-of-type {
+  margin-right: 0px;
+}
+
+.-pop-up-1 .-main .available-timeline ul li.limited-time {
+  background: #d9534f;
+}
+
+.-pop-up-1 .-main .available-timeline ul li.high-time {
+  background: #5cb85c;
+}
+
+.-pop-up-1 .-main .available-timeline.active {
+  display: block;
+}
+
+.-pop-up-1 .-main .-availability {
+  position: absolute;
+  bottom: 14px;
+}
+
+.-pop-up-1 .-main .-availability ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.-pop-up-1 .-main .-availability ul li {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  border-radius: 20px;
+  text-align: center;
+  font: normal normal normal 15px/23px Arial;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.-pop-up-1 .-main .-availability ul li:last-of-type {
+  margin-right: 0px;
+}
+
+.-pop-up-1 .-main .-availability ul li::before {
+  content: "";
+  display: inline;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.-pop-up-1 .-main .-availability ul li.high::before {
+  background: #5cb85c;
+}
+
+.-pop-up-1 .-main .-availability ul li.low::before {
+  background: #f0ad4e;
+}
+
+.-pop-up-1 .-main .-availability ul li.limited::before {
+  background: #d9534f;
+}
+
+.-pop-up-1 .-main .-availability ul li:first-of-type::before {
+  display: none;
+}
+
+/* --- End Pop Up # 1 */
 /* Pop Up # 3 Start --- */
 .-pop-up-3 .-main {
   height: 414px !important;
@@ -251,7 +388,7 @@
 }
 
 .-pop-up-3 .-main .-terms.-second .-check-it {
-  margin: 17px 0px 80px 0px;
+  margin: 17px 0px 78px 0px;
 }
 
 .-pop-up-3 .-main .-terms.-second p span::after {
@@ -312,10 +449,10 @@
 
 .-pop-up-3 .-total {
   padding: 15px 19px;
-  border-top: 0.5px solid #000;
   border-bottom: 0.5px solid #000;
   background: white;
   text-align: right;
+  border-top: 1px solid #000;
 }
 
 .-pop-up-3 .-total p {
@@ -352,6 +489,13 @@
 .-pop-up-3 .-pay-or-back a {
   text-decoration: none;
   color: black;
+}
+
+.-pop-up-3 .-pay-or-back a.continue {
+  color: white;
+  background: #d91717;
+  border-radius: 0px;
+  border-bottom-right-radius: 10px;
 }
 
 .-pop-up-3 .-pay-or-back input {
@@ -442,7 +586,7 @@
 }
 
 .-pop-up-4 .-main form .-check-points {
-  padding: 0px 19px 46px 19px;
+  padding: 0px 19px 43px 19px;
 }
 
 .-pop-up-4 .-main form .-check-points p {
@@ -546,6 +690,13 @@
   color: black;
 }
 
+.-pop-up-4 .-pay-or-back a.continue {
+  color: white;
+  background: #d91717;
+  border-radius: 0px;
+  border-bottom-right-radius: 10px;
+}
+
 .-pop-up-4 .-pay-or-back input {
   border: none;
   outline: none;
@@ -558,7 +709,7 @@
 /* --- End Pop Up # 4 */
 /* Pop Up # 5 Start --- */
 .-pop-up-5 .-main {
-  height: 425px !important;
+  height: 423px !important;
   padding: 19px;
 }
 
@@ -732,6 +883,7 @@
 /* Pop Up # 6 Start --- */
 .-pop-up-6 .-main {
   position: relative;
+  height: 461px !important;
 }
 
 .-pop-up-6 .-main h4 {
@@ -825,7 +977,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  position: relative;
+  position: relative !important;
 }
 
 .-pop-up-7 .-main .-previous-card-slec .-previous-card a {
@@ -840,12 +992,55 @@
   text-decoration: none;
 }
 
-.-pop-up-7 .-main .-previous-card-slec .-previous-card svg {
+.-pop-up-7 .-main .-previous-card-slec .-previous-card .checkBoxx {
+  padding: 0;
+  top: 11px;
+  position: absolute !important;
+  right: 3px;
+  margin: 0;
+  position: relative;
+}
+
+.-pop-up-7 .-main .-previous-card-slec .-previous-card .checkBoxx input {
+  margin-right: 8px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.-pop-up-7 .-main .-previous-card-slec .-previous-card .checkBoxx span a {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.-pop-up-7 .-main .-previous-card-slec .-previous-card .checkBoxx span::before {
+  content: "";
+  display: block;
   position: absolute;
-  right: 17px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  border-radius: 5px;
+  top: 3px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  margin-left: 4px;
+  border: 0.5px solid #000;
+  pointer-events: none;
+}
+
+.-pop-up-7 .-main .-previous-card-slec .-previous-card .checkBoxx span::after {
+  pointer-events: none;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  background-image: url(../img/checked.png);
+  width: 11px;
+  height: 11px;
+  display: none;
+}
+
+.-pop-up-7 .-main .-previous-card-slec .-previous-card .checkBoxx input:checked + span::after {
+  display: block;
 }
 
 .-pop-up-7 .-main form {
@@ -924,16 +1119,60 @@
   width: 69px;
 }
 
-.-pop-up-7 .-main form .-input-area P {
-  margin: 0 0 20px 0px;
+.-pop-up-7 .-main form .-input-area p {
+  padding: 0;
   font: normal normal normal 15px/17px Arial;
   letter-spacing: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 17.5px 0px;
+  position: relative;
 }
 
-.-pop-up-7 .-main form .-input-area P input[type="checkbox"] {
+.-pop-up-7 .-main form .-input-area p input {
+  margin-right: 8px;
+  cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  opacity: 0;
+}
+
+.-pop-up-7 .-main form .-input-area p span a {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.-pop-up-7 .-main form .-input-area p span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 5px;
+  top: 3px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  margin-left: 4px;
+  border: 0.5px solid #000;
+  pointer-events: none;
+}
+
+.-pop-up-7 .-main form .-input-area p span::after {
+  pointer-events: none;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  background-image: url(../img/checked.png);
+  width: 11px;
+  height: 11px;
+  display: none;
+}
+
+.-pop-up-7 .-main form .-input-area p input:checked + span::after {
+  display: block;
 }
 
 .-pop-up-7 .-main form .-total {
@@ -976,6 +1215,13 @@
   color: black;
 }
 
+.-pop-up-7 .-main form .-pay-or-back a.continue {
+  color: white;
+  background: #d91717;
+  border-radius: 0px;
+  border-bottom-right-radius: 10px;
+}
+
 .-pop-up-7 .-main form .-pay-or-back input {
   border: none;
   outline: none;
@@ -989,6 +1235,7 @@
 /* Pop Up # 9 Start --- */
 .-pop-up-9 .-main {
   text-align: center;
+  height: 462px !important;
 }
 
 .-pop-up-9 .-main .-content {
@@ -1049,6 +1296,7 @@
 /* Pop Up # 10 Start --- */
 .-pop-up-10 .-main {
   text-align: center;
+  height: 462px !important;
 }
 
 .-pop-up-10 .-main .-content {
