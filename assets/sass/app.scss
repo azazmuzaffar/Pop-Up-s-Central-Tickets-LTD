@@ -503,7 +503,7 @@
     form {
       margin: 17px 0px 0px;
       .-check-points {
-        padding: 0px 19px 43px 19px;
+        padding: 0px 19px 16px 19px;
         p {
           font: normal normal normal 15px/17px Arial;
           letter-spacing: 0px;
@@ -550,10 +550,20 @@
           }
         }
       }
-      h6 {
-        font: normal normal normal 12px/16px Arial;
-        margin: 0;
-        letter-spacing: 0px;
+      .-sponsers {
+        display: flex;
+        align-items: flex-start;
+        h6 {
+          font: normal normal 400 11px/15px Arial;
+          margin: 0;
+          letter-spacing: 0px;
+          display: block;
+          width: 160px;
+        }
+        img {
+          margin-left: auto;
+          margin-right: 0;
+        }
       }
     }
   }
