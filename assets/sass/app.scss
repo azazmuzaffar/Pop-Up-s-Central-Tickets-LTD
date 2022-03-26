@@ -220,12 +220,14 @@
 /* Pop Up # 3 Start --- */
 .-pop-up-3 {
   .-main {
-    height: 414px !important;
+    height: fit-content !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     .-social-club {
       padding: 19px;
       margin-bottom: 15px;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       .-head {
         h3,
         p {
@@ -453,7 +455,9 @@
 /* Pop Up # 4 Start --- */
 .-pop-up-4 {
   .-main {
-    height: 414px !important;
+    height: fit-content !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     .-invoice {
       padding: 19px 19px 0px 19px;
       h3,
@@ -573,8 +577,14 @@
             align-items: center;
             margin-top: 5px;
             li {
+              img {
+                width: 70px;
+              }
               &:first-of-type {
                 margin-right: 14px;
+                img {
+                  width: 86px;
+                }
               }
             }
           }
@@ -842,6 +852,18 @@
 /* Pop Up # 7 Start --- */
 .-pop-up-7 {
   .-main {
+    .-previous-card-and-cvv {
+      display: flex;
+      align-items: center;
+      input {
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 53px;
+        margin-left: 8px;
+        outline: none;
+      }
+    }
     .-previous-card-slec {
       padding: 19px;
       h3 {
@@ -858,7 +880,7 @@
           font: normal normal normal 15px/17px Arial;
           letter-spacing: 0px;
           display: block;
-          width: 260px;
+          width: 230px;
           padding: 11px 17px;
           color: black;
           text-decoration: none;
@@ -867,14 +889,15 @@
           padding: 0;
           top: 11px;
           position: absolute !important;
-          right: 3px;
+          right: -25px;
           margin: 0;
           input {
-            margin-right: 8px;
+            margin-left: 0px;
             cursor: pointer;
             opacity: 0;
+            left: -16px;
+            position: relative;
           }
-          position: relative;
           span {
             a {
               color: #ff0000;
@@ -966,7 +989,7 @@
             margin-right: 8px;
             cursor: pointer;
             width: fit-content;
-            opacity: 0;
+            opacity: 1;
           }
           position: relative;
           span {

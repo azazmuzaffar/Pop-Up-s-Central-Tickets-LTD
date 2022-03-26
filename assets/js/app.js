@@ -101,3 +101,13 @@ $(document).ready(function () {
     $(".pu-11").css("display", "block");
   });
 });
+
+jQuery(document).ready(function () {
+  jQuery(".checkbox").change(function () {
+    if ($(this).prop("checked")) {
+      alert("Do you want to cheched?"); //checked
+    } else {
+      alert("Do you want to un-cheched?"); //not checked
+    }
+  });
+});
