@@ -111,3 +111,15 @@ jQuery(document).ready(function () {
     }
   });
 });
+
+/* >>>>>>>>> Validation Popup <<<<<<<< */
+$(".show-validation").on("click", function () {
+  $(".-validation-popup-bg").addClass("show");
+});
+
+$(".-close-validation").on("click", function () {
+  $(".-validation-popup-bg").removeClass("show");
+});
+$(".cancel-validation").on("click", function () {
+  $(".-validation-popup-bg").removeClass("show");
+});

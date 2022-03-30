@@ -940,6 +940,7 @@
       .-input-area {
         border-top: 0.5px solid black;
         width: calc(100% - 38px);
+        height: 289px !important;
         margin: 0 auto;
         .-head {
           display: flex;
@@ -1218,3 +1219,176 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<< */
+
+.-pre-loader {
+  width: 100%;
+  height: calc(100% - 55px);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: white;
+  position: absolute;
+  z-index: 9999;
+  top: 55px;
+  left: 0;
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .loading-5 {
+      $size: 0.5em;
+      $circumference: 3.14 * 2 * $size;
+      $offset: 0.85;
+      $circumference: $circumference * $offset;
+      & .svg-wrapper {
+        background: white;
+        width: $size * 3;
+        height: $size * 3;
+        margin: 0 Auto;
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+      }
+      .circle {
+        stroke: #000066;
+        fill: none;
+        stroke-width: 3px;
+        stroke-dashoffset: -$circumference;
+        stroke-dasharray: $circumference;
+        animation: loading5 1.4s linear infinite, color1 10s linear infinite;
+        transform: rotate(-90deg);
+        transform-origin: 50%;
+        position: relative;
+      }
+      @keyframes loading5 {
+        0% {
+          transform: rotate(0);
+          stroke-dashoffset: $circumference;
+        }
+        50% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          transform: rotate(360deg);
+          stroke-dashoffset: -$circumference;
+        }
+      }
+
+      @keyframes color1 {
+        0% {
+          stroke: #d8334a;
+        }
+        10% {
+          stroke: #fc6e51;
+        }
+        20% {
+          stroke: #ffce54;
+        }
+        30% {
+          stroke: #a0d468;
+        }
+        40% {
+          stroke: #a0cecb;
+        }
+        50% {
+          stroke: #4fc1e9;
+        }
+        60% {
+          stroke: #8067b7;
+        }
+        70% {
+          stroke: #baa286;
+        }
+        80% {
+          stroke: #ccd1d9;
+        }
+        90% {
+          stroke: #2ecc71;
+        }
+        100% {
+          stroke: #d8334a;
+        }
+      }
+    }
+  }
+}
+
+/* Validation Pop Up */
+.-validation-popup-bg {
+  width: 100%;
+  height: 100vh;
+  background: #00000080 0% 0% no-repeat padding-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  &.show {
+    display: block;
+  }
+  .-validation-popup {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: fit-content;
+    .-validation-popup-message {
+      background: #d91717;
+      padding: 30px;
+      text-align: center;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      color: #fff;
+      img {
+        width: 70px;
+      }
+      h4,
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h4 {
+        font-size: 26px;
+        font-weight: bold;
+        margin: 15px 0px 4px 0px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    .-validation-popup-actions {
+      background: #fff;
+      padding: 20px 20px;
+      text-align: center;
+      a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #000;
+        &:first-child {
+          padding: 10px 20px 11px 20px;
+          background: #d91717;
+          color: #fff;
+          border-radius: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .-close-validation {
+      position: absolute;
+      cursor: pointer;
+      top: 20px;
+      right: 20px;
+      svg {
+        width: 15px;
+        fill: #fff;
+      }
+    }
+  }
+}
