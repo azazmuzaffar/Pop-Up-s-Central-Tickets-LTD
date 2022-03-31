@@ -1485,7 +1485,7 @@
   height: calc(100% - 55px);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background: white;
+  background: rgba(0, 0, 0, 0.349);
   position: absolute;
   z-index: 9999;
   top: 55px;
@@ -1501,7 +1501,7 @@
 }
 
 .-pre-loader .loader .loading-5 .svg-wrapper {
-  background: white;
+  background: rgba(0, 0, 0, 0.541);
   width: 1.5em;
   height: 1.5em;
   margin: 0 Auto;
@@ -1516,8 +1516,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .-pre-loader .loader .loading-5 .circle {
