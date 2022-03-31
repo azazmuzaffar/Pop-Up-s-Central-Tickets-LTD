@@ -115,7 +115,9 @@
 
 .-pop-up-1 .-main {
   position: relative;
-  height: 475px !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 19px;
@@ -172,8 +174,8 @@
 }
 
 .-pop-up-1 .-main .-availability {
-  position: absolute;
-  bottom: 14px;
+  position: relative;
+  margin-top: 12px;
 }
 
 .-pop-up-1 .-main .-availability ul {

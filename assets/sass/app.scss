@@ -102,7 +102,7 @@
   opacity: 0;
   .-main {
     position: relative;
-    height: 475px !important;
+    height: fit-content !important;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 19px;
@@ -149,8 +149,8 @@
       }
     }
     .-availability {
-      position: absolute;
-      bottom: 14px;
+      position: relative;
+      margin-top: 12px;
       ul {
         margin: 0;
         padding: 0;
