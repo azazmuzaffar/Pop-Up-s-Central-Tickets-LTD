@@ -11,7 +11,8 @@
 .pu-7,
 .pu-9,
 .pu-10,
-.pu-11 {
+.pu-11,
+.pu-12 {
   display: none;
 }
 .-show-pop-up {
@@ -1167,6 +1168,119 @@
   }
 }
 /* --- End Pop Up # 11 */
+
+/* Pop Up # 12 Start --- */
+.-pop-up-12 {
+  .-main {
+    height: 513px !important;
+    max-height: fit-content !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .-invoice {
+      padding: 19px 19px 0px 19px;
+      h3,
+      p {
+        margin: 0;
+      }
+      h3 {
+        font: normal normal bold 20px/23px Arial;
+        letter-spacing: -0.2px;
+        color: #d91717;
+      }
+      p {
+        font: normal normal normal 15px/17px Arial;
+        letter-spacing: 0px;
+      }
+      ul {
+        list-style: none;
+        margin: 16px 0px 10px 0px;
+        padding: 0;
+        li {
+          border-top: 0.5px solid #00000029;
+          display: flex;
+          align-items: center;
+          padding: 7px 0px;
+          &:last-of-type {
+            border-bottom: 0.5px solid #00000029;
+          }
+          p {
+            font: normal normal normal 15px/20px Arial;
+            letter-spacing: 0px;
+            &:last-of-type {
+              margin-left: auto;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      h4 {
+        border-top: 0.5px solid;
+        margin: 0;
+        font: normal normal normal 15px/20px Arial;
+        letter-spacing: 0px;
+        padding-top: 7px;
+        span {
+          font-weight: bold;
+          color: #1c36ff;
+        }
+      }
+    }
+  }
+  .-total {
+    padding: 15px 19px;
+    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
+    background: white;
+    text-align: center;
+    p {
+      font: normal normal normal 18px/21px Arial;
+      color: black;
+      text-align: right;
+      margin: 0;
+    }
+  }
+  form {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .-pay-or-back {
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    a,
+    input {
+      margin: 0;
+      width: 50%;
+      text-align: center;
+      cursor: pointer;
+      font: normal normal normal 18px/21px Arial;
+      letter-spacing: 0px;
+      padding: 15px 12px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      &.continue {
+        color: white;
+        background: #d91717;
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+    input {
+      border: none;
+      outline: none;
+      color: white;
+      background: #d91717;
+      border-radius: 0px;
+      border-bottom-right-radius: 10px;
+    }
+    background: white;
+  }
+}
+/* --- End Pop Up # 4 */
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<<< */
