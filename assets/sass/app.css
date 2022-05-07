@@ -29,13 +29,14 @@
 
 /* Pop Up Common */
 .-pop-up-bg {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   background: #00000080;
   padding-bottom: 75px;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   padding: 100px 0px;
   height: 100vh;
 }
