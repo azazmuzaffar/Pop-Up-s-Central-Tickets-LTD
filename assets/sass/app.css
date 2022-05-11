@@ -302,7 +302,7 @@
 
 .-pop-up-3 .-main .-social-club .select-dropdown {
   position: relative;
-  border: 2px solid #000;
+  border: 1px solid #000;
   width: 46px;
   border-radius: 5px;
 }
