@@ -96,7 +96,7 @@
     <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>> Pop Up # 3 <<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
-    <div class="-pop-up-bg pu-3">
+    <div class="-pop-up-bg pu-3" style="display: block">
       <div class="-pop-up -pop-up-3">
         <div class="-header">
           <p>Book Tickets</p>
@@ -127,10 +127,10 @@
               </div>
               <div class="-terms">
                 <div class="-check-it">
-                  <p>
-                    <input type="checkbox" checked />
-                    <span>Make your tickets <a href="#">FLEXI</a></span>
-                  </p>
+                  <div class="the-checkbox">
+                    <input type="checkbox" id="ch-1" checked />
+                    <label for="ch-1">Make your tickets <a href="#">FLEXI</a></label>
+                  </div>
                   <h6>+ £1.00</h6>
                 </div>
                 <h5>Peace of mind to transfer or cancel your booking if you can no longer attend. (<a href="#">T&C’s</a> apply).</h5>
@@ -153,10 +153,10 @@
                   <p>M9NT4T</p>
                   <h6>- £1.00</h6>
                 </div>
-                <p>
-                  <input type="checkbox" checked />
-                  <span>Click to confirm that you have understood the <a href="#">collection instructions</a> for this event</span>
-                </p>
+                <div class="the-checkbox">
+                  <input type="checkbox" id="ch-2" checked />
+                  <label for="ch-2">Click to confirm that you have understood the <a href="#">collection instructions</a> for this event</label>
+                </div>
               </div>
               <div class="-total">
                 <p>Total (VAT inc.):&nbsp;<b>£5.00</b></p>
