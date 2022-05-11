@@ -6,6 +6,10 @@
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  margin-bottom: 8px;
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
 }
 .the-checkbox input {
   padding: 0;
@@ -63,9 +67,6 @@
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-input {
-  border-radius: 0px !important;
 }
 
 .pu-1,
@@ -655,6 +656,7 @@ input {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  margin-top: 21px;
 }
 .-pop-up-4 .-main form .-sponsers h6 {
   font: normal normal 400 11px/15px Arial;
@@ -965,6 +967,11 @@ input {
     border-radius: 0;
   }
 }
+.-pop-up-7 .-main {
+  height: 510px !important;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 .-pop-up-7 .-main .-previous-card-and-cvv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,6 +1012,11 @@ input {
   padding: 11px 17px;
   color: #000;
   text-decoration: none;
+}
+.-pop-up-7 .-main .-previous-card-slec .-previous-card-and-cvv .-previous-card .the-checkbox {
+  position: absolute;
+  right: 5px;
+  top: 12px;
 }
 .-pop-up-7 .-main .-previous-card-slec .-previous-card .checkBoxx {
   padding: 0;
@@ -1060,7 +1072,11 @@ input {
   border-top: 1px solid #000;
   width: calc(100% - 38px);
   margin: 0 auto;
+  &.margin-bottom {
+    margin-bottom: 50px;
+  }
 }
+
 .-pop-up-7 .-main form .-input-area .-head {
   display: -webkit-box;
   display: -ms-flexbox;
