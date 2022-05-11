@@ -302,13 +302,13 @@
 
 .-pop-up-3 .-main .-social-club .select-dropdown {
   position: relative;
-  border: 0.5px solid #000;
+  border: 2px solid #000;
   width: 46px;
   border-radius: 5px;
 }
 
 .-pop-up-3 .-main .-social-club .select-dropdown select {
-  font: normal normal normal 15px/17px Arial;
+  font: normal normal normal 15px/15px Arial;
   letter-spacing: 0;
   max-width: 100%;
   padding: 5px 24px 5px 10px;
@@ -374,7 +374,7 @@
 
 .-pop-up-3 .-main .-terms.-second {
   margin-bottom: 17px;
-  border-top: 0.5px solid #000;
+  border-top: 1px solid #000;
   padding-top: 17px;
 }
 
@@ -391,7 +391,7 @@
   width: 164px;
   margin-right: 13px;
   height: 37px;
-  border: 0.5px solid #00000088;
+  border: 1px solid #00000088;
   font: normal normal normal 15px/20px Arial;
   letter-spacing: 0;
   padding-left: 10px;
@@ -442,7 +442,7 @@
   width: 11px;
   height: 11px;
   margin-left: 4px;
-  border: 0.5px solid #000;
+  border: 1px solid #000;
   pointer-events: none;
 }
 
@@ -465,7 +465,7 @@
 
 .-pop-up-3 .-total {
   padding: 15px 19px;
-  border-bottom: 0.5px solid #000;
+  border-bottom: 1px solid #000;
   background: #fff;
   text-align: right;
   border-top: 1px solid #000;
@@ -573,11 +573,11 @@
 }
 
 .-pop-up-4 .-main .-invoice ul li.border {
-  border-bottom: 0.5px solid #00000029;
+  border-bottom: 1px solid #00000029;
 }
 
 .-pop-up-4 .-main .-invoice ul li:first-of-type {
-  border-top: 0.5px solid #00000029;
+  border-top: 1px solid #00000029;
 }
 
 .-pop-up-4 .-main .-invoice ul li:last-of-type {
@@ -595,7 +595,7 @@
 }
 
 .-pop-up-4 .-main .-invoice h4 {
-  border-top: 0.5px solid;
+  border-top: 1px solid;
   margin: 0;
   font: normal normal normal 15px/20px Arial;
   letter-spacing: 0;
@@ -649,7 +649,7 @@
   width: 11px;
   height: 11px;
   margin-left: 4px;
-  border: 0.5px solid #000;
+  border: 1px solid #000;
   pointer-events: none;
 }
 
@@ -733,8 +733,8 @@
 
 .-pop-up-4 .-total {
   padding: 15px 19px;
-  border-top: 0.5px solid #000;
-  border-bottom: 0.5px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   background: #fff;
   text-align: center;
 }
@@ -906,7 +906,7 @@
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 0.5px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .-pop-up-5 .-main .-top-up p {
@@ -1074,7 +1074,7 @@
 }
 
 .-pop-up-7 .-main .-previous-card-slec .-previous-card a {
-  border: 0.5px solid #000;
+  border: 1px solid #000;
   border-radius: 10px;
   font: normal normal normal 15px/17px Arial;
   letter-spacing: 0;
@@ -1117,7 +1117,7 @@
   width: 11px;
   height: 11px;
   margin-left: 4px;
-  border: 0.5px solid #000;
+  border: 1px solid #000;
   pointer-events: none;
 }
 
@@ -1143,7 +1143,7 @@
 }
 
 .-pop-up-7 .-main form .-input-area {
-  border-top: 0.5px solid #000;
+  border-top: 1px solid #000;
   width: calc(100% - 38px);
   margin: 0 auto;
 }
@@ -1175,7 +1175,7 @@
   font: normal normal normal 15px/17px Arial;
   letter-spacing: 0;
   padding: 11px 15px;
-  border: 0.5px solid #000;
+  border: 1px solid #000;
   border-radius: 10px;
   outline: none;
 }
@@ -1249,7 +1249,7 @@
   width: 11px;
   height: 11px;
   margin-left: 4px;
-  border: 0.5px solid #000;
+  border: 1px solid #000;
   pointer-events: none;
 }
 
@@ -1272,8 +1272,8 @@
 
 .-pop-up-7 .-main form .-total {
   padding: 15px 19px;
-  border-top: 0.5px solid #000;
-  border-bottom: 0.5px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   background: #fff;
   text-align: center;
 }
@@ -1455,7 +1455,7 @@
 }
 
 .-pop-up-11 .-main::-webkit-scrollbar-track {
-  border-left: 0.5px solid #000;
+  border-left: 1px solid #000;
 }
 
 .-pop-up-11 .-main::-webkit-scrollbar-thumb {
@@ -1942,7 +1942,7 @@
 }
 
 .-pop-up-12 .-main .-invoice ul li {
-  border-top: 0.5px solid #00000029;
+  border-top: 1px solid #00000029;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1953,7 +1953,7 @@
 }
 
 .-pop-up-12 .-main .-invoice ul li:last-of-type {
-  border-bottom: 0.5px solid #00000029;
+  border-bottom: 1px solid #00000029;
 }
 
 .-pop-up-12 .-main .-invoice ul li p {
@@ -1967,7 +1967,7 @@
 }
 
 .-pop-up-12 .-main .-invoice h4 {
-  border-top: 0.5px solid;
+  border-top: 1px solid;
   margin: 0;
   font: normal normal normal 15px/20px Arial;
   letter-spacing: 0;
@@ -1981,8 +1981,8 @@
 
 .-pop-up-12 .-total {
   padding: 15px 19px;
-  border-top: 0.5px solid #000;
-  border-bottom: 0.5px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   background: #fff;
   text-align: center;
 }
