@@ -1072,9 +1072,7 @@
   border-top: 1px solid #000;
   width: calc(100% - 38px);
   margin: 0 auto;
-  &.margin-bottom {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 50px;
 }
 
 .-pop-up-7 .-main form .-input-area .-head {
@@ -1742,9 +1740,6 @@
 }
 .-pop-up-12 .-main {
   height: 513px !important;
-  max-height: -webkit-fit-content !important;
-  max-height: -moz-fit-content !important;
-  max-height: fit-content !important;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
